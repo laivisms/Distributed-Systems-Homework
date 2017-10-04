@@ -43,3 +43,10 @@ or, using the provided course file:
 
 	mvn test -DfilePath="backups/classes.txt"
 
+In order to run the program using maven, type the following command:
+
+	mvn exec:java -Dexec.mainClass=com.JSCS.maven.SocketClient_Server.Initializer -Dexec.args="path/to/course/info.txt"
+
+to use the default course file:
+
+	mvn exec:java -Dexec.mainClass=com.JSCS.maven.SocketClient_Server.Initializer -Dexec.args="backups/classes.txt"
